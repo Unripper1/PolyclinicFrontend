@@ -27,7 +27,7 @@ export default function Logout(){
             }
         })
             .then(response => {
-                window.location.href = "http://localhost:3000/"
+                window.location.href = "/"
 
             })
     }
