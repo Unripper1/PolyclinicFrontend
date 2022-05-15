@@ -92,7 +92,7 @@ export default function RegDoc(){
             })
         }).then(res => {
             if (res.data === true) {
-                window.location.href = "https://localhost:3000/admin"
+                window.location.href = "/admin"
             } else {
                 alert("There is already a user with this email")
             }

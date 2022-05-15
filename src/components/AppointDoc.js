@@ -33,7 +33,6 @@ function AppointDoc(input, init) {
             })
     }
     function postResult(event){
-        alert(params.id);
         fetch('https://polyclinic.herokuapp.com/api/doctor/app/'+params.id, {
             method: 'POST',
             headers: {
@@ -48,7 +47,6 @@ function AppointDoc(input, init) {
                 description: event.target.description.value
             })
         }).then(res =>{
-            alert(res.data);
             return res.data;
         })
             .catch(function (error) {
